@@ -1,11 +1,11 @@
-import React from 'react';
-import { SimulatorState, initialSimulatorState } from './state';
-import { SimulatorActions } from './actions';
+import React from 'react'
+import { SimulatorState, initialSimulatorState } from './state'
+import { SimulatorActions } from './actions'
 
 export const SimulatorContext = React.createContext<{
-    state: SimulatorState;
-    dispatch: React.Dispatch<SimulatorActions>;
+  state: SimulatorState
+  dispatch: React.Dispatch<SimulatorActions>
 }>({
-    state: initialSimulatorState,
-    dispatch: () => undefined,
-});
+  state: initialSimulatorState,
+  dispatch: () => undefined,
+})

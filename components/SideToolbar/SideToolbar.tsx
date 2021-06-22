@@ -22,32 +22,31 @@ export interface Item {
   action: () => void
 }
 
-
 export const SideToolbar: FC<ISideToolbar> = (props) => {
   const theme = useTheme()
   const classes = useStyles()
   const { dispatch } = useContext(SimulatorContext)
 
-
   const listItems: Item[] = [
     {
       text: 'Client',
       action: () => {
-
-        dispatch( addClient({
-          reqRate: 10,
-          timeRate: 2,
-          hasConnection: false,
-          coordX: 10,
-          coordY: 200
-        }) );
-      }
+        dispatch(
+          addClient({
+            reqRate: 10,
+            timeRate: 2,
+            hasConnection: false,
+            coordX: 10,
+            coordY: 200,
+          })
+        )
+      },
     },
     {
       text: 'Service',
-      action: () => console.log('here service')
-    }
-  ];
+      action: () => console.log('here service'),
+    },
+  ]
 
   return (
     <Drawer
@@ -68,7 +67,7 @@ export const SideToolbar: FC<ISideToolbar> = (props) => {
       </div>
       <Divider />
       <List>
-        { listItems.map((item, index) => (
+        {listItems.map((item, index) => (
           <ListItem button onClick={item.action} key={item.text}>
             <ListItemText primary={item.text} />
           </ListItem>

@@ -1,12 +1,12 @@
-import { Client } from "./state";
+import { Client } from './state'
 
 export enum ActionType {
   AddClient,
 }
 
 export interface AddClient {
-  type: ActionType.AddClient;
-  payload: Client;
+  type: ActionType.AddClient
+  payload: Client
 }
 
-export type SimulatorActions = AddClient;
+export type SimulatorActions = AddClient
