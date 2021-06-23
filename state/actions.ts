@@ -1,7 +1,9 @@
-import { Client } from './state'
+import { Client, Service, Resource } from './state'
 
 export enum ActionType {
   AddClient,
+  AddService,
+  AddResource,
 }
 
 export interface AddClient {
@@ -9,4 +11,14 @@ export interface AddClient {
   payload: Client
 }
 
-export type SimulatorActions = AddClient
+export interface AddService {
+  type: ActionType.AddService
+  payload: Service
+}
+
+export interface AddResource {
+  type: ActionType.AddResource
+  payload: Resource
+}
+
+export type SimulatorActions = AddClient | AddService | AddResource

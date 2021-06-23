@@ -10,7 +10,7 @@ import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 import { useStyles } from './uiStyles'
 import { SimulatorContext } from '../../state/context'
-import { addClient } from '../../state/reducer'
+import { addClient, addService, addResource } from '../../state/reducer'
 
 export interface ISideToolbar {
   isOpen: boolean
@@ -44,7 +44,31 @@ export const SideToolbar: FC<ISideToolbar> = (props) => {
     },
     {
       text: 'Service',
-      action: () => console.log('here service'),
+      action: () => {
+        dispatch(
+          addService({
+            reqinprogress: 62,
+            reqmaxcapacity: 50,
+            timeRate: 2,
+            coordX: 200,
+            coordY: 200,
+          })
+        )
+      },
+    },
+    {
+      text: 'Resource',
+      action: () => {
+        dispatch(
+          addResource({
+            reqinprogress: 62,
+            reqmaxcapacity: 50,
+            timeRate: 2,
+            coordX: 400,
+            coordY: 200,
+          })
+        )
+      },
     },
   ]
 

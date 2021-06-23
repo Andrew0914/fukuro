@@ -1,0 +1,22 @@
+.service {
+  width: 90px;
+  height: 46px;
+  fill: #ffffff;
+  stroke: black;
+  stroke-width: 2;
+}
+
+.service:hover {
+  stroke: #4f4f4f;
+}
+
+.service_label,
+.service_data {
+  font-family: 'Verdana';
+  font-size: 1rem;
+  fill: black;
+}
+
+.service_data {
+  font-size: 0.62rem;
+}

@@ -1,0 +1,22 @@
+.resource {
+  width: 110px;
+  height: 46px;
+  fill: #ffffff;
+  stroke: black;
+  stroke-width: 2;
+}
+
+.resource:hover {
+  stroke: #4f4f4f;
+}
+
+.resource_label,
+.resource_data {
+  font-family: 'Verdana';
+  font-size: 1rem;
+  fill: black;
+}
+
+.resource_data {
+  font-size: 0.62rem;
+}
