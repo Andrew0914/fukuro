@@ -13,14 +13,9 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.11.4",
-    "add": "^2.0.6",
     "next": "10.2.3",
-    "or": "^0.2.0",
-    "ramda": "^0.27.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-xarrows": "^1.7.0",
-    "yarn": "^1.22.10"
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.14.5",

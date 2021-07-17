@@ -17,33 +17,3 @@ a {
 * {
   box-sizing: border-box;
 }
-/* 
-#from,
-#to {
-  position: absolute;
-  z-index: 100000 !important;
-}
-
-#from {
-  left: 500px;
-  top: 200px;
-}
-
-#to {
-  left: 300px;
-  top: 260px;
-} */
-
-.arrow {
-  pointer-events: none;
-}
-
-.arrow__path {
-  stroke: #000;
-  fill: transparent;
-}
-
-.arrow__head line {
-  stroke: #000;
-  stroke-width: 1px;
-}
