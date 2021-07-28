@@ -1,8 +1,8 @@
 .service {
   width: 110px;
   height: 46px;
-  fill: #f7cecd;
-  stroke: rgb(174, 75, 75);
+  fill: #ffffff;
+  stroke: blue;
   stroke-width: 2;
 }
 
@@ -12,16 +12,19 @@
 
 .service_label,
 .service_data {
-  font-family: 'Verdana';
-  font-size: 1rem;
+  font-family: 'Arial';
   fill: black;
 }
 
+.cliente_label {
+  font-size: 14px;
+}
+
 .service_data {
-  font-size: 0.62rem;
+  font-size: 12px;
 }
 
 .service_show {
-  font-size: 0.62rem;
-  fill: crimson;
+  font-size: 12px;
+  fill: red;
 }

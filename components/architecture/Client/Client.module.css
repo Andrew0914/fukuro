@@ -2,7 +2,7 @@
   width: 90px;
   height: 46px;
   fill: #ffffff;
-  stroke: black;
+  stroke: green;
   stroke-width: 2;
 }
 
@@ -12,11 +12,14 @@
 
 .cliente_label,
 .client_data {
-  font-family: 'Verdana';
-  font-size: 1rem;
+  font-family: 'Arial';
   fill: black;
 }
 
+.cliente_label {
+  font-size: 24;
+}
+
 .client_data {
-  font-size: 0.62rem;
+  font-size: 12px;
 }

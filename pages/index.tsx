@@ -19,8 +19,16 @@ const { flatten } = require('ramda')
 export default function Home(): JSX.Element {
   const [state, dispatch] = useReducer(simulatorReducer, initialSimulatorState)
 
-  const handleButtonClick = () => {
-    console.log(flatten([state.clients, state.resources, state.services]))
+  const handleButtonClick = async () => {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API}simulate`, {
+      method: 'POST',
+      body: JSON.stringify({ data: flatten([state.clients, state.resources, state.services]) }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+    const data = await res.json()
+    console.log(data)
   }
 
   return (

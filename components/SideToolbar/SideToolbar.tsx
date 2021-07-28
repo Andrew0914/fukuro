@@ -38,7 +38,7 @@ export const SideToolbar: FC<ISideToolbar> = (props) => {
             requestRate: 10,
             x: 10,
             y: 200,
-            resources: ['service_id'],
+            resource: 'service_id',
           })
         )
       },
@@ -74,7 +74,6 @@ export const SideToolbar: FC<ISideToolbar> = (props) => {
             x: 400,
             y: 200,
             concurrency: 5,
-            resources: [],
           })
         )
       },

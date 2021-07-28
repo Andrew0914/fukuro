@@ -10,16 +10,17 @@ export interface Base {
   type: string
   x: number
   y: number
-  resources: string[]
 }
 
 export interface Client extends Base {
   requestRate: number
+  resource: string
 }
 
 export interface Service extends Base {
   maxRequestCapacity: number
   concurrency: number
+  resources: string[]
 }
 
 export interface Resource extends Base {
